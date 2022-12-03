@@ -1,0 +1,8 @@
+day_nr: 03
+[0.03125] took: 0.0 sec.
+read input
+[0.03125] took: 0.0 sec.
+result_a: 8298
+[0.03125] took: 0.0 sec.
+result_b: 2708
+[0.03125] took: 0.0 sec.
