@@ -1,9 +1,7 @@
 #!/usr/bin/env python
-import asyncio
-import operator
-import sys
 import os
 import re
+import sys
 import time
 
 # GLOBALS
@@ -41,8 +39,6 @@ def read_input():
 
 # SOLUTIONS
 def find_solution_a():
-    result = 0
-
     global elves
     # idx: {    "items" : [int, ...]
     #           "sum": int
@@ -77,7 +73,6 @@ def find_solution_a():
 
 
 def find_solution_b():
-    result = 0
     global elves
 
     calories_list = sorted([val.get("sum") for val in elves.values()])
