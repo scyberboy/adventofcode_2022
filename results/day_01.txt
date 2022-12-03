@@ -4,3 +4,5 @@ read input
 [0.078125] took: 0.0 sec.
 result_a: 69310
 [0.078125] took: 0.0 sec.
+result_b: 206104
+[0.078125] took: 0.0 sec.

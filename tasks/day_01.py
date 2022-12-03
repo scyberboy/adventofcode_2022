@@ -8,6 +8,7 @@ import time
 
 # GLOBALS
 input_data = []
+elves = dict()
 
 filename = os.path.basename(__file__)
 day_nr = re.search(r"\d+", filename).group()
@@ -42,7 +43,7 @@ def read_input():
 def find_solution_a():
     result = 0
 
-    elves = dict()
+    global elves
     # idx: {    "items" : [int, ...]
     #           "sum": int
     #       }
@@ -69,26 +70,24 @@ def find_solution_a():
 
     # print(f"elves: {elves}")
 
-    result = max([val.get("sum") for val in elves.values()])
+    calories_list = sorted([val.get("sum") for val in elves.values()])
+    result = calories_list[-1]
 
     return result
 
 
 def find_solution_b():
-    sums_list = list(map(sum, zip(input_data, input_data[1:], input_data[2:])))
-    # print("sums_list", sums_list)
-    reduced_data_it = filter(bool, map(operator.lt, sums_list, sums_list[1:]))
-    reduced_data = list(reduced_data_it)
-    reduced_data_len = len(reduced_data)
+    result = 0
+    global elves
 
-    # print("reduced_data({}): {}".format(reduced_data_len, reduced_data))
+    calories_list = sorted([val.get("sum") for val in elves.values()])
+    result = sum(calories_list[-3:])
 
-    return reduced_data_len
+    return result
 
 
 # MAIN
 def do_main():
-
     show_elapsed_time()
 
     print("read input")
@@ -100,9 +99,9 @@ def do_main():
     print(f"result_a: {result_a}")
     show_elapsed_time()
 
-    # result_b = find_solution_b()
-    # print(f"result_b: {result_b}")
-    # show_elapsed_time()
+    result_b = find_solution_b()
+    print(f"result_b: {result_b}")
+    show_elapsed_time()
 
 
 if __name__ == "__main__":
