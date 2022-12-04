@@ -4,5 +4,5 @@ read input
 [0.03125] took: 0.015625 sec.
 result_a: 550
 [0.03125] took: 0.0 sec.
-result_b: None
+result_b: 931
 [0.03125] took: 0.0 sec.

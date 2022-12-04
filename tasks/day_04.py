@@ -64,9 +64,9 @@ def find_solution_a():
     for b1, e1, b2, e2 in input_data:
         set1 = set([elem for elem in range(b1, e1 + 1)])
         set2 = set([elem for elem in range(b2, e2 + 1)])
-        intersection_set = set1 | set2
-        if intersection_set == max(set1, set2):
-            # print(f"True -> intersection:{intersection_set}, set1:{set1}, set2:{set2}")
+        union_set = set1 | set2
+        if union_set == max(set1, set2):
+            # print(f"True -> union:{union_set}, set1:{set1}, set2:{set2}")
             total_contained += 1
 
     return total_contained
@@ -74,10 +74,18 @@ def find_solution_a():
 
 def find_solution_b():
     """
-
+    In how many assignment pairs do the ranges overlap?
     """
+    total_overlapping = 0
+    for b1, e1, b2, e2 in input_data:
+        set1 = set([elem for elem in range(b1, e1 + 1)])
+        set2 = set([elem for elem in range(b2, e2 + 1)])
+        intersection_set = set1 & set2
+        if len(intersection_set) > 0:
+            # print(f"True -> intersection_set:{intersection_set}, set1:{set1}, set2:{set2}")
+            total_overlapping += 1
 
-    return None
+    return total_overlapping
 
 
 # MAIN
