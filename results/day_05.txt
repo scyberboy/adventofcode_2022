@@ -1,0 +1,8 @@
+day_nr: 05
+[0.03125] took: 0.0 sec.
+read input
+[0.03125] took: 0.0 sec.
+result_a: JRVNHHCSJ
+[0.03125] took: 0.0 sec.
+result_b: GNFBSBJLH
+[0.03125] took: 0.0 sec.
