@@ -1,8 +1,8 @@
 day_nr: 07
-[0.015625] took: 0.0 sec.
+[0.03125] took: 0.0 sec.
 read input
-[0.015625] took: 0.0 sec.
-result_a: False
-[0.015625] took: 0.0 sec.
-result_b: False
-[0.015625] took: 0.0 sec.
+[0.03125] took: 0.0 sec.
+result_a: 1644735
+[0.0625] took: 0.03125 sec.
+result_b: 1300850
+[0.0625] took: 0.0 sec.
