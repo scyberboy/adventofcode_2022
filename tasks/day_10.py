@@ -52,14 +52,6 @@ def controlled_input_read():
 
 # SOLUTIONS
 
-def get_previous(cycle_nr) -> int:
-    for idx in range(cycle_nr - 1, -1):
-        if idx in cycle_map:
-            return cycle_map.get(idx)
-
-    return register_x
-
-
 def build_cycle_map():
     global register_x
     global cycle_map
@@ -103,7 +95,6 @@ def build_cycle_map():
         value = int(line.split()[1])
 
         target_cycle = curr_cycle + 2
-        # previous_cycle_val = get_previous(curr_cycle)
         cycle_map[target_cycle] = curr_register_x + value
         # print(f"cycle_map[{target_cycle}] = {curr_register_x} + {value}")
 
@@ -154,7 +145,8 @@ def find_solution_a():
 
 def find_solution_b():
     """
-
+    Render the image given by your program.
+    What eight capital letters appear on your CRT?
     """
     pix_lit = "#"
     pix_dark = "."
