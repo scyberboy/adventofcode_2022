@@ -1,0 +1,34 @@
+day_nr: 11
+[0.125] took: 0.0 sec.
+read input
+[0.125] took: 0.0 sec.
+
+==================================================================================
+
+Monkeys after 20 rounds:
+ [Monkey([2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], old * 19, value % 17 == 0, 17, {True: 2, False: 7}, int(value / 3), 321),
+ Monkey([], old + 2, value % 19 == 0, 19, {True: 7, False: 0}, int(value / 3), 57),
+ Monkey([], old + 7, value % 7 == 0, 7, {True: 4, False: 3}, int(value / 3), 36),
+ Monkey([5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], old + 1, value % 11 == 0, 11, {True: 6, False: 4}, int(value / 3), 322),
+ Monkey([], old * 5, value % 13 == 0, 13, {True: 6, False: 5}, int(value / 3), 326),
+ Monkey([], old + 5, value % 3 == 0, 3, {True: 1, False: 0}, int(value / 3), 328),
+ Monkey([], old * old, value % 5 == 0, 5, {True: 5, False: 1}, int(value / 3), 8),
+ Monkey([], old + 3, value % 2 == 0, 2, {True: 2, False: 3}, int(value / 3), 330)]
+inspection_scores: [8, 36, 57, 321, 322, 326, 328, 330]
+result_a: 108240
+[0.15625] took: 0.03125 sec.
+
+==================================================================================
+
+Monkeys after 10000 rounds:
+ [Monkey([9144918, 9144918, 6911000, 6911000, 3663350, 5494825, 5494825, 6665795, 6665795, 8529125, 8529125, 4125245, 4125245, 5032495, 4324555], old * 19, value % 17 == 0, 17, {True: 2, False: 7}, value % MAGIC_CONSTANT, 164077),
+ Monkey([7924845, 6862636, 8557626, 8557626, 8557626, 705496], old + 2, value % 19 == 0, 19, {True: 7, False: 0}, value % MAGIC_CONSTANT, 31322),
+ Monkey([4612538, 4612538, 4612538, 4612538, 7006918, 4145518, 4145518, 6079148, 4744778, 4569028, 7272158], old + 7, value % 7 == 0, 7, {True: 4, False: 3}, value % MAGIC_CONSTANT, 124565),
+ Monkey([4294155, 3704775], old + 1, value % 11 == 0, 11, {True: 6, False: 4}, value % MAGIC_CONSTANT, 141137),
+ Monkey([], old * 5, value % 13 == 0, 13, {True: 6, False: 5}, value % MAGIC_CONSTANT, 140371),
+ Monkey([6910995, 6910995], old + 5, value % 3 == 0, 3, {True: 1, False: 0}, value % MAGIC_CONSTANT, 140372),
+ Monkey([], old * old, value % 5 == 0, 5, {True: 5, False: 1}, value % MAGIC_CONSTANT, 31686),
+ Monkey([], old + 3, value % 2 == 0, 2, {True: 2, False: 3}, value % MAGIC_CONSTANT, 156713)]
+inspection_scores: [31322, 31686, 124565, 140371, 140372, 141137, 156713, 164077]
+result_b: 25712998901
+[13.0] took: 12.84375 sec.
