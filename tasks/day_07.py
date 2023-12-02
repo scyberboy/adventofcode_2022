@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import pprint
 import re
 import sys
 import time
@@ -87,16 +88,16 @@ def update_parent_sizes(nodes: list[dict], node):
 
     my_path = node["path"]
     my_size = node["size"]
-    # print(f"UPS: enter - {my_path}({my_size})")
+    print(f"UPS: enter - {my_path}({my_size})")
     parent_path = my_path.rsplit("/", 1)[0]
     if not parent_path:
         parent_path = "/"
-    # print(f"UPS: parent_path - {parent_path}")
+    print(f"UPS: parent_path - {parent_path}")
     parent = _get_node_by_path(nodes, parent_path)
     if parent:
-        # print(f'UPS: found parent - {parent["path"]}({parent["size"]})')
+        print(f'UPS: found parent - {parent["path"]}({parent["size"]})')
         parent["size"] += my_size
-        # print(f'UPS: new size set - {parent["path"]}({parent["size"]})')
+        print(f'UPS: new size set - {parent["path"]}({parent["size"]})')
         update_parent_sizes(nodes, parent)
     else:
         # print(f"UPS: no parent found - returning...")
@@ -141,7 +142,7 @@ def find_solution_a():
     # first line of input - skip it. root_fs is already initialized
     for line in input_data[1:]:
 
-        # print(f"---------------------\n line: {pprint.pformat(line)}")
+        print(f"---------------------\n line: {pprint.pformat(line)}")
 
         # if COMMAND
         if line.startswith("$"):
@@ -185,7 +186,7 @@ def find_solution_a():
         # print(f"curr_node_path({len(curr_node_path)}): {pprint.pformat(curr_node_path)}")
 
         curr_node = _get_node_by_path(root_fs, curr_node_path)
-        # print(f"curr_node(): {pprint.pformat(curr_node)}")
+        print(f"curr_node(): {pprint.pformat(curr_node)}")
 
         if cd_up:
             # when we go up - update target(parent) folder's size with the one we're just exiting
@@ -214,11 +215,11 @@ def find_solution_a():
     # We need to update all parent's sizes up to "/" traversing the current chain
     update_parent_sizes(root_fs, curr_node)
 
-    # print(f"FINAL root_fs:\n {pprint.pformat(root_fs, sort_dicts=False, indent=2, width=120, compact=False)}")
+    print(f"FINAL root_fs:\n {pprint.pformat(root_fs, sort_dicts=False, indent=2, width=120, compact=False)}")
 
     # Now, generate directory list (indeed dict with name:size)
     candidates = _generate_dir_dict_(root_fs)
-    # print(f"candidates: {pprint.pformat(candidates)}")
+    print(f"candidates: {pprint.pformat(candidates)}")
 
     # Let's now traverse and found what we need !!!
     dir_size_limit = 100000

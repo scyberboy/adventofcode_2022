@@ -1,0 +1,396 @@
+day_nr: 09
+[0.03125] took: 0.0 sec.
+read input
+[0.03125] took: 0.0 sec.
+INIT head_positions_w_direction: [Point[None => 0,0], Point[R => 0,4], Point[U => 4,4], Point[L => 4,1], Point[D => 3,1], Point[R => 3,5], Point[D => 2,5], Point[L => 2,0], Point[R => 2,2]]
+START - sim rope
+sim rope, knot nr: 0
+head_positions_w_direction: [Point[None => 0,0], Point[R => 0,4], Point[U => 4,4], Point[L => 4,1], Point[D => 3,1], Point[R => 3,5], Point[D => 2,5], Point[L => 2,0], Point[R => 2,2]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 0,4]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 0,4]
+GTP relativity: Positions.APART_STRAIGHT
+POSSIBLE tail_positions: [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3]]
+tail_position: [R => 0,3]
+head_position: [U => 4,4]
+GTP tail_position: [R => 0,3]
+GTP head_position: [U => 4,4]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4]]
+tail_position: [U => 3,4]
+head_position: [L => 4,1]
+GTP tail_position: [U => 3,4]
+GTP head_position: [L => 4,1]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[U => 3,4], Point[L => 4,3], Point[L => 4,2]]
+tail_position: [L => 4,2]
+head_position: [D => 3,1]
+GTP tail_position: [L => 4,2]
+GTP head_position: [D => 3,1]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[L => 4,2]]
+tail_position: [L => 4,2]
+head_position: [R => 3,5]
+GTP tail_position: [L => 4,2]
+GTP head_position: [R => 3,5]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[L => 4,2], Point[R => 3,3], Point[R => 3,4]]
+tail_position: [R => 3,4]
+head_position: [D => 2,5]
+GTP tail_position: [R => 3,4]
+GTP head_position: [D => 2,5]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 3,4]]
+tail_position: [R => 3,4]
+head_position: [L => 2,0]
+GTP tail_position: [R => 3,4]
+GTP head_position: [L => 2,0]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 3,4], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]]
+tail_position: [L => 2,1]
+head_position: [R => 2,2]
+GTP tail_position: [L => 2,1]
+GTP head_position: [R => 2,2]
+GTP relativity: Positions.ADJACENT_STRAIGHT
+POSSIBLE tail_positions: [Point[L => 2,1]]
+rope after knot nr.0 :
+[[Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]]]
+		 ====> 		 2 knots rope simulated:
+[[Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]]]
+tail steps: [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]]
+result_a: 13
+[0.03125] took: 0.0 sec.
+
+==================================================================================
+
+INIT head_positions_w_direction: [Point[None => 0,0], Point[R => 0,4], Point[U => 4,4], Point[L => 4,1], Point[D => 3,1], Point[R => 3,5], Point[D => 2,5], Point[L => 2,0], Point[R => 2,2]]
+START - sim rope
+sim rope, knot nr: 0
+head_positions_w_direction: [Point[None => 0,0], Point[R => 0,4], Point[U => 4,4], Point[L => 4,1], Point[D => 3,1], Point[R => 3,5], Point[D => 2,5], Point[L => 2,0], Point[R => 2,2]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 0,4]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 0,4]
+GTP relativity: Positions.APART_STRAIGHT
+POSSIBLE tail_positions: [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3]]
+tail_position: [R => 0,3]
+head_position: [U => 4,4]
+GTP tail_position: [R => 0,3]
+GTP head_position: [U => 4,4]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4]]
+tail_position: [U => 3,4]
+head_position: [L => 4,1]
+GTP tail_position: [U => 3,4]
+GTP head_position: [L => 4,1]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[U => 3,4], Point[L => 4,3], Point[L => 4,2]]
+tail_position: [L => 4,2]
+head_position: [D => 3,1]
+GTP tail_position: [L => 4,2]
+GTP head_position: [D => 3,1]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[L => 4,2]]
+tail_position: [L => 4,2]
+head_position: [R => 3,5]
+GTP tail_position: [L => 4,2]
+GTP head_position: [R => 3,5]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[L => 4,2], Point[R => 3,3], Point[R => 3,4]]
+tail_position: [R => 3,4]
+head_position: [D => 2,5]
+GTP tail_position: [R => 3,4]
+GTP head_position: [D => 2,5]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 3,4]]
+tail_position: [R => 3,4]
+head_position: [L => 2,0]
+GTP tail_position: [R => 3,4]
+GTP head_position: [L => 2,0]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 3,4], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]]
+tail_position: [L => 2,1]
+head_position: [R => 2,2]
+GTP tail_position: [L => 2,1]
+GTP head_position: [R => 2,2]
+GTP relativity: Positions.ADJACENT_STRAIGHT
+POSSIBLE tail_positions: [Point[L => 2,1]]
+rope after knot nr.0 :
+[[Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]]]
+sim rope, knot nr: 1
+head_positions_w_direction: [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 0,1]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 0,1]
+GTP relativity: Positions.ADJACENT_STRAIGHT
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 0,2]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 0,2]
+GTP relativity: Positions.APART_STRAIGHT
+POSSIBLE tail_positions: [Point[None => 0,0], Point[R => 0,1]]
+tail_position: [R => 0,1]
+head_position: [R => 0,3]
+GTP tail_position: [R => 0,1]
+GTP head_position: [R => 0,3]
+GTP relativity: Positions.APART_STRAIGHT
+POSSIBLE tail_positions: [Point[R => 0,1], Point[R => 0,2]]
+tail_position: [R => 0,2]
+head_position: [U => 1,4]
+GTP tail_position: [R => 0,2]
+GTP head_position: [U => 1,4]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 0,2], Point[R => 1,3]]
+tail_position: [R => 1,3]
+head_position: [U => 2,4]
+GTP tail_position: [R => 1,3]
+GTP head_position: [U => 2,4]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 1,3]]
+tail_position: [R => 1,3]
+head_position: [U => 3,4]
+GTP tail_position: [R => 1,3]
+GTP head_position: [U => 3,4]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 1,3], Point[U => 2,4]]
+tail_position: [U => 2,4]
+head_position: [L => 4,3]
+GTP tail_position: [U => 2,4]
+GTP head_position: [L => 4,3]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[U => 2,4], Point[U => 3,3]]
+tail_position: [U => 3,3]
+head_position: [L => 4,2]
+GTP tail_position: [U => 3,3]
+GTP head_position: [L => 4,2]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[U => 3,3]]
+tail_position: [U => 3,3]
+head_position: [R => 3,3]
+GTP tail_position: [U => 3,3]
+GTP head_position: [R => 3,3]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[U => 3,3]]
+tail_position: [U => 3,3]
+head_position: [L => 2,3]
+GTP tail_position: [U => 3,3]
+GTP head_position: [L => 2,3]
+GTP relativity: Positions.ADJACENT_STRAIGHT
+POSSIBLE tail_positions: [Point[U => 3,3]]
+tail_position: [U => 3,3]
+head_position: [L => 2,2]
+GTP tail_position: [U => 3,3]
+GTP head_position: [L => 2,2]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[U => 3,3]]
+tail_position: [U => 3,3]
+head_position: [L => 2,1]
+GTP tail_position: [U => 3,3]
+GTP head_position: [L => 2,1]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[U => 3,3], Point[L => 2,2]]
+rope after knot nr.1 :
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]]]
+sim rope, knot nr: 2
+head_positions_w_direction: [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 0,1]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 0,1]
+GTP relativity: Positions.ADJACENT_STRAIGHT
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 0,2]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 0,2]
+GTP relativity: Positions.APART_STRAIGHT
+POSSIBLE tail_positions: [Point[None => 0,0], Point[R => 0,1]]
+tail_position: [R => 0,1]
+head_position: [R => 1,3]
+GTP tail_position: [R => 0,1]
+GTP head_position: [R => 1,3]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 0,1], Point[R => 1,2]]
+tail_position: [R => 1,2]
+head_position: [U => 2,4]
+GTP tail_position: [R => 1,2]
+GTP head_position: [U => 2,4]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 1,2], Point[R => 2,3]]
+tail_position: [R => 2,3]
+head_position: [U => 3,3]
+GTP tail_position: [R => 2,3]
+GTP head_position: [U => 3,3]
+GTP relativity: Positions.ADJACENT_STRAIGHT
+POSSIBLE tail_positions: [Point[R => 2,3]]
+tail_position: [R => 2,3]
+head_position: [L => 2,2]
+GTP tail_position: [R => 2,3]
+GTP head_position: [L => 2,2]
+GTP relativity: Positions.ADJACENT_STRAIGHT
+POSSIBLE tail_positions: [Point[R => 2,3]]
+rope after knot nr.2 :
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]]]
+sim rope, knot nr: 3
+head_positions_w_direction: [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 0,1]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 0,1]
+GTP relativity: Positions.ADJACENT_STRAIGHT
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 1,2]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 1,2]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[None => 0,0], Point[R => 1,1]]
+tail_position: [R => 1,1]
+head_position: [R => 2,3]
+GTP tail_position: [R => 1,1]
+GTP head_position: [R => 2,3]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[R => 1,1], Point[R => 2,2]]
+rope after knot nr.3 :
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]],
+  [Point[None => 0,0], Point[R => 1,1], Point[R => 2,2]]]
+sim rope, knot nr: 4
+head_positions_w_direction: [Point[None => 0,0], Point[R => 1,1], Point[R => 2,2]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 1,1]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 1,1]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 2,2]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 2,2]
+GTP relativity: Positions.APART_DIAGONAL
+POSSIBLE tail_positions: [Point[None => 0,0], Point[R => 1,1]]
+rope after knot nr.4 :
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]],
+  [Point[None => 0,0], Point[R => 1,1], Point[R => 2,2]],
+  [Point[None => 0,0], Point[R => 1,1]]]
+sim rope, knot nr: 5
+head_positions_w_direction: [Point[None => 0,0], Point[R => 1,1]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [R => 1,1]
+GTP tail_position: [None => 0,0]
+GTP head_position: [R => 1,1]
+GTP relativity: Positions.ADJACENT_DIAGONAL
+POSSIBLE tail_positions: [Point[None => 0,0]]
+rope after knot nr.5 :
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]],
+  [Point[None => 0,0], Point[R => 1,1], Point[R => 2,2]],
+  [Point[None => 0,0], Point[R => 1,1]],
+  [Point[None => 0,0]]]
+sim rope, knot nr: 6
+head_positions_w_direction: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+rope after knot nr.6 :
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]],
+  [Point[None => 0,0], Point[R => 1,1], Point[R => 2,2]],
+  [Point[None => 0,0], Point[R => 1,1]],
+  [Point[None => 0,0]]]
+sim rope, knot nr: 7
+head_positions_w_direction: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+rope after knot nr.7 :
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]],
+  [Point[None => 0,0], Point[R => 1,1], Point[R => 2,2]],
+  [Point[None => 0,0], Point[R => 1,1]],
+  [Point[None => 0,0]]]
+sim rope, knot nr: 8
+head_positions_w_direction: [Point[None => 0,0]]
+tail_position: [None => 0,0]
+head_position: [None => 0,0]
+GTP tail_position: [None => 0,0]
+GTP head_position: [None => 0,0]
+GTP relativity: Positions.OVERLAPPING
+POSSIBLE tail_positions: [Point[None => 0,0]]
+rope after knot nr.8 :
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]],
+  [Point[None => 0,0], Point[R => 1,1], Point[R => 2,2]],
+  [Point[None => 0,0], Point[R => 1,1]],
+  [Point[None => 0,0]]]
+		 ====> 		 10 knots rope simulated:
+[ [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 0,3], Point[U => 1,4], Point[U => 2,4], Point[U => 3,4], Point[L => 4,3], Point[L => 4,2], Point[R => 3,3], Point[L => 2,3], Point[L => 2,2], Point[L => 2,1]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 0,2], Point[R => 1,3], Point[U => 2,4], Point[U => 3,3], Point[L => 2,2]],
+  [Point[None => 0,0], Point[R => 0,1], Point[R => 1,2], Point[R => 2,3]],
+  [Point[None => 0,0], Point[R => 1,1], Point[R => 2,2]],
+  [Point[None => 0,0], Point[R => 1,1]],
+  [Point[None => 0,0]]]
+tail steps: [Point[None => 0,0]]
+result_b: 1
+[0.03125] took: 0.0 sec.
